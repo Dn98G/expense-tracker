@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ExpenseForm from "./components/ExpenseForm";
-import ExpenseTable from "./components/expenseTable";
-import SearchBar from "./components/searchBar";
+import ExpenseTab from "./components/ExpenseTab";
+import ExpenseChart from "./components/ExpenseChart";
+import SearchOpt from "./components/SearchOpt";
 
 const App = () => {
   const [expenses, setExpenses] = useState([]);
@@ -33,11 +33,11 @@ const App = () => {
       </p>
       <div className="main">
         <div className="left">
-          <ExpenseForm onAddExpense={addExpense} />
+          <ExpenseTab onAddExpense={addExpense} />
         </div>
         <div className="right">
-          <SearchBar search={search} setSearch={setSearch} />
-          <ExpenseTable expenses={filteredExpenses} onDelete={deleteExpense} />
+          <SearchOpt search={search} setSearch={setSearch} />
+          <ExpenseChart expenses={filteredExpenses} onDelete={deleteExpense} />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExpenseTable = ({ expenses, onDelete }) => {
+const ExpenseChart = ({ expenses, onDelete }) => {
   return (
     <table className="table">
       <thead>
@@ -33,4 +33,4 @@ const ExpenseTable = ({ expenses, onDelete }) => {
   );
 };
 
-export default ExpenseTable;
+export default ExpenseChart;

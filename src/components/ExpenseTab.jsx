@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ExpenseForm = ({ onAddExpense }) => {
+const ExpenseTab = ({ onAddExpense }) => {
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -71,4 +71,4 @@ const ExpenseForm = ({ onAddExpense }) => {
   );
 };
 
-export default ExpenseForm;
+export default ExpenseTab;
